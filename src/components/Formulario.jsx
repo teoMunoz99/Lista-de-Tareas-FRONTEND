@@ -29,7 +29,7 @@ const Formulario = () => {
             type="text"
             placeholder="Ingrese una tarea"
             onChange={(e) => setTarea(e.target.value)}
-            value={tarea}
+            value={tarea} required minLength={3} maxLength={30}
           />
           <Button variant="primary" type="submit">
             Enviar

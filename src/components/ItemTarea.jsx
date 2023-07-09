@@ -7,7 +7,7 @@ const ItemTarea = ({ tarea, setTareas }) => {
   const [nuevaDescripcion, setNuevaDescripcion] = useState(tarea.descripcionTarea);
 
   const borrarTarea = () => {
-    consultaBorrarProducto(tarea.id).then((respuesta) => {
+    consultaBorrarProducto(tarea._id).then((respuesta) => {
       if (respuesta.status === 200) {
         console.log("Tarea borrada!");
         mostrarTareas().then((respuesta) => setTareas(respuesta));
@@ -18,7 +18,7 @@ const ItemTarea = ({ tarea, setTareas }) => {
   };
 
   const editarTarea = () => {
-    consultaEditarTarea(tarea.id, nuevaDescripcion).then((respuesta) => {
+    consultaEditarTarea(tarea._id, nuevaDescripcion).then((respuesta) => {
       if (respuesta.status === 200) {
         console.log("Tarea editada!");
         mostrarTareas().then((respuesta) => setTareas(respuesta));

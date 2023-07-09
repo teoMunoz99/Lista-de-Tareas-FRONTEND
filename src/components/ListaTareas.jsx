@@ -18,8 +18,7 @@ const ListaTareas = ({lista, borrarTarea}) => {
   return (
     <ListGroup>
       {
-        tareas.map((tarea)=><ItemTarea key={tarea.id} tarea={tarea} setTareas={setTareas}></ItemTarea>)
-        //lista.map((tarea, indice)=> <ItemTarea key={indice} tarea={tarea} borrarTarea={borrarTarea}></ItemTarea>)
+        tareas.map((tarea)=><ItemTarea key={tarea._id} tarea={tarea} setTareas={setTareas}></ItemTarea>)
       }
     </ListGroup>
   );
