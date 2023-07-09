@@ -1,5 +1,5 @@
 import { Button, Form, ListGroup } from "react-bootstrap";
-import { consultaBorrarProducto, consultaEditarTarea, mostrarTareas } from "../helpers/queries";
+import { consultaBorrarTarea, consultaEditarTarea, mostrarTareas } from "../helpers/queries";
 import { useState } from "react";
 
 const ItemTarea = ({ tarea, setTareas }) => {
@@ -7,7 +7,7 @@ const ItemTarea = ({ tarea, setTareas }) => {
   const [nuevaDescripcion, setNuevaDescripcion] = useState(tarea.descripcionTarea);
 
   const borrarTarea = () => {
-    consultaBorrarProducto(tarea._id).then((respuesta) => {
+    consultaBorrarTarea(tarea._id).then((respuesta) => {
       if (respuesta.status === 200) {
         console.log("Tarea borrada!");
         mostrarTareas().then((respuesta) => setTareas(respuesta));

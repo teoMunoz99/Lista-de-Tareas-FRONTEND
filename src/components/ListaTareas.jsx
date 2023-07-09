@@ -1,6 +1,6 @@
 import { ListGroup } from "react-bootstrap";
 import ItemTarea from "./ItemTarea";
-import { mostrarTareas } from "../helpers/queries";
+import { consultaCrearTarea, mostrarTareas } from "../helpers/queries";
 import { useEffect, useState } from "react";
 
 const ListaTareas = ({lista, borrarTarea}) => {

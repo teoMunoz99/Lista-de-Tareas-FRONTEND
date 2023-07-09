@@ -13,7 +13,7 @@ export const mostrarTareas = async ()=>{
     }
 };
 
-export const consultaBorrarProducto = async (id)=>{
+export const consultaBorrarTarea = async (id)=>{
     try{
         const respuesta = await fetch(`${URL_TAREAS}/${id}`, {
             method: "DELETE"
@@ -25,7 +25,7 @@ export const consultaBorrarProducto = async (id)=>{
 }
 
 
-export const consultaCrearProducto = async (tarea)=>{
+export const consultaCrearTarea = async (tarea)=>{
     try{
         const body = {
             descripcionTarea: tarea
