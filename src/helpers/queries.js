@@ -44,3 +44,22 @@ export const consultaCrearProducto = async (tarea)=>{
     }
 }
 
+export const consultaEditarTarea = async (id, tarea) => {
+    try {
+      const body = {
+        descripcionTarea: tarea,
+      };
+  
+      const respuesta = await fetch(`${URL_TAREAS}/${id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body),
+      });
+      
+      return respuesta;
+    } catch (error) {
+      console.log(error);
+    }
+  };

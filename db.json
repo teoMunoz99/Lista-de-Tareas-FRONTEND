@@ -19,38 +19,6 @@
     {
       "id": 5,
       "descripcionTarea": "Tarea de ejemplo 5"
-    },
-    {
-      "id": 6,
-      "descripcionTarea": "Tarea de ejemplo 6"
-    },
-    {
-      "id": 7,
-      "descripcionTarea": "Tarea de ejemplo 7"
-    },
-    {
-      "id": 8,
-      "descripcionTarea": "Tarea de ejemplo 8"
-    },
-    {
-      "id": 9,
-      "descripcionTarea": "Tarea de ejemplo 9"
-    },
-    {
-      "descripcionTarea": "Tarea de ejemplo 10",
-      "id": 10
-    },
-    {
-      "descripcionTarea": "Tarea de ejemplo 11",
-      "id": 11
-    },
-    {
-      "descripcionTarea": "Tarea de ejemplo 12",
-      "id": 12
-    },
-    {
-      "descripcionTarea": "aaaaqa",
-      "id": 13
     }
   ]
 }
